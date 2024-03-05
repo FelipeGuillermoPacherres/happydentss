@@ -1,0 +1,103 @@
+.HappyDentssNavbar{
+    position: fixed !important;
+    top: 0 !important;
+    width: 100% !important;
+    z-index: 10;
+    box-shadow: 0 0.25rem 10px 3px rgba(0, 0, 0, 0.2);
+}
+
+.HappyDentssContainer{
+    padding: 1rem 3rem !important;
+
+    @media screen and (max-width: 768px) {
+        padding: 1rem 1.5em !important;
+    }
+}
+
+.HappyDentssNavbarLink, .HappyDentssNavbarDropdown>a{
+    color: black !important;
+    font-size: 15px !important;
+    padding: 0.5rem 1rem !important;
+    align-self: center;
+}
+
+.link-selected{
+    font-weight: bold !important;
+    text-decoration: underline !important;
+}
+
+.logoImg{
+    width: 145px;
+    height: auto;
+}
+
+.PrincipalSect{
+    background-image: linear-gradient(to bottom, rgb(255 255 255 / 5%), rgb(0 0 0 / 87%)), url("../../public/img/img-background.jpg");
+    //background-image: url("../../public/img/img-background.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.HappyDentssFooter{
+    box-shadow: 0 -0.25rem 20px 2px rgba(0, 0, 0, 0.2);
+    background-color: $happydentss_skblue;
+    font-size: 15px !important;
+
+    .label{
+        background-color: $happydentss_skblue;
+        height: 5px;
+        padding: 0rem 0.5rem;
+    }
+
+    .container-padding{
+        padding: 1rem
+    }
+
+    .contact-info{
+        a, a:hover, a:focus, a:active{
+            text-decoration: none !important;
+        }
+
+        ul {
+            list-style: none !important;
+            padding-left: 0;
+        }
+
+        font-size: 15px !important;
+        i{
+            &, &:hover, &:focus, &:active{
+                color: $happydentss_skblue !important;
+            }
+            margin-right: 0.5rem;
+        }
+        span{
+            font-weight: bold;
+            &, &:hover, &:focus, &:active{
+                color: black !important;
+            }
+        }
+        &.text-left{
+            text-align: left !important;
+        }
+        &.text-right{
+            text-align: right !important;
+        }
+    }
+
+    .cr-label{
+        background-color: $happydentss_skblue;
+        color: white !important;
+        font-size: 12.5px !important;
+
+        .fp-link{
+            &, &:hover, &:active, &:focus{
+                font-size: 12.5px !important;
+                font-weight: bold;
+                color: white !important;
+                text-decoration: none !important;
+            }
+        }
+    }
+
+}

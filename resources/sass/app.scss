@@ -3,6 +3,18 @@
 
 // Variables
 @import 'variables';
+@import "style";
+@import "scrolldown";
 
 // Bootstrap
 @import '~bootstrap/scss/bootstrap';
+
+@import '~@fortawesome/fontawesome-free/scss/brands';
+@import '~@fortawesome/fontawesome-free/scss/regular';
+@import '~@fortawesome/fontawesome-free/scss/solid';
+@import '~@fortawesome/fontawesome-free/scss/fontawesome';
+@import "slick-carousel/slick/slick";
+@import "slick-carousel/slick/slick-theme";
+@import "slick-carousel/slick/slick.css";
+@import "slick-carousel/slick/slick-theme.css";
+
