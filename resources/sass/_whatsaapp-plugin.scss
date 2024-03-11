@@ -1,0 +1,29 @@
+.whatsapp-plugin:hover, .whatsapp-plugin:link,
+.whatsapp-plugin:visited ,.whatsapp-plugin:focus,
+.whatsapp-plugin:before, .whatsapp-plugin:after,
+.whatsapp-plugin:checked, .whatsapp-plugin:active{
+    color:#FFF;
+    text-decoration: none;
+    font-weight: normal;
+    text-shadow: unset;
+}
+
+.whatsapp-plugin{
+    position:fixed;
+    width:3.125rem;
+    height:3.125rem;
+    bottom:0.95rem;
+    right:0.95rem;
+    background-color: #4AD504;
+    border-radius:50px;
+    text-align:center;
+    font-size:30px;
+    z-index:100;
+    color:#FFF;
+    text-decoration: none;
+    font-weight: normal;
+}
+
+.whatsapp-icon{
+    margin-top: 11px;
+}

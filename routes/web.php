@@ -14,3 +14,4 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', [\App\Http\Controllers\MasterController::class, 'indexView'])->name('home');
+Route::get('/MyLinks', [\App\Http\Controllers\MasterController::class, 'myLinksView'])->name('mylinks');

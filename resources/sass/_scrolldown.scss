@@ -15,7 +15,7 @@
 }
 .ScrollDownPlugin div {
     position: absolute;
-    top: 47.5%;
+    top: 40%;
     width: 100%;
     text-align: center;
     z-index: 2;
@@ -25,8 +25,8 @@
     white-space: nowrap;
 
     &>img{
-        width: 50%;
-        background-color: #ffffff6b;
+        width: 250px;
+        background-color: white;
         padding: 0.75rem;
         border-radius: 0.625rem;
         @media screen and (max-width: 768px) {
@@ -47,12 +47,11 @@
     display: inline-block;
     -webkit-transform: translate(0, -50%);
     transform: translate(0, -50%);
-    color: #fff;
     letter-spacing: .1em;
     text-decoration: none;
     transition: opacity .3s;
     padding-top: 60px;
-    color:white;
+    color:white !important;
 }
 .ScrollDownPlugin a:hover {
     opacity: .5;

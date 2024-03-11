@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    @yield('seo')
+    <title>Happy Dentss | MyLinks</title>
 
     <!-- Favicon -->
     <link rel="icon" href="{{ asset('img/favicon.png') }}" type="image/x-icon">
@@ -21,13 +21,9 @@
 </head>
 <body >
 
-@include('Layouts.header')
-
 <section>
-    @yield('content')
+    <div id="my-links" data-url="{{ url('/') }}"></div>
 </section>
-
-@include('Layouts.footer')
 
 <script src="{{ asset('js/app.js') }}"></script>
 <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>

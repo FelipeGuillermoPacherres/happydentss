@@ -317,6 +317,12 @@
 }
 
 @charset "UTF-8";
+body {
+  -webkit-user-select: none; /* Safari */ /* IE 10 and IE 11 */
+  -moz-user-select: none;
+       user-select: none; /* Standard syntax */
+}
+
 .HappyDentssNavbar {
   position: fixed !important;
   top: 0 !important;
@@ -336,7 +342,7 @@
 
 .HappyDentssNavbarLink, .HappyDentssNavbarDropdown > a {
   color: black !important;
-  font-size: 15px !important;
+  font-size: 17.5px !important;
   padding: 0.5rem 1rem !important;
   align-self: center;
 }
@@ -347,7 +353,7 @@
 }
 
 .logoImg {
-  width: 145px;
+  width: 100px;
   height: auto;
 }
 
@@ -357,11 +363,21 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
+.PrincipalSect .content {
+  font-size: 25px !important;
+  font-weight: bold;
+}
+@media (max-width: 767px) {
+  .PrincipalSect .content {
+    font-size: 32.5px !important;
+  }
+}
 
 .HappyDentssFooter {
   box-shadow: 0 -0.25rem 20px 2px rgba(0, 0, 0, 0.2);
-  background-color: #02aa9d;
+  background-color: #0c635c;
   font-size: 15px !important;
+  color: white;
 }
 .HappyDentssFooter .label {
   background-color: #02aa9d;
@@ -410,6 +426,160 @@
   color: white !important;
   text-decoration: none !important;
 }
+.HappyDentssFooter .footer-list a {
+  color: white;
+  text-decoration: none;
+}
+.HappyDentssFooter .footer-title {
+  font-weight: bold;
+  font-size: 25px;
+}
+.HappyDentssFooter .nav-link-footer {
+  font-size: 17.5px;
+}
+.HappyDentssFooter .footer-link-icon i {
+  color: white;
+  font-size: 50px;
+}
+
+.MyLinksSection {
+  background: linear-gradient(0deg, #02aa9d, #3cfff0, #33ccff);
+  animation: gradient-animation 5s ease infinite;
+}
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+.MyLinksSection .panel {
+  border-radius: 0.625rem;
+}
+.MyLinksSection .profilePhoto {
+  text-align: center;
+}
+.MyLinksSection .profilePhoto img {
+  transition: transform 0.7s ease-in-out;
+  width: 100px;
+  border-radius: 50%;
+  border: solid #0b2845;
+}
+.MyLinksSection .profilePhoto img:hover {
+  transform: rotate(360deg) scale(1.125);
+  cursor: pointer;
+}
+.MyLinksSection .profileName {
+  color: #0b2845;
+  text-align: center;
+  font-weight: bold;
+  padding-top: 1rem;
+  font-size: 20px !important;
+}
+.MyLinksSection .profileButtons {
+  padding-top: 0.5rem;
+}
+.MyLinksSection .profileButtons .button {
+  width: 100%;
+  text-align: center;
+  font-weight: bold;
+  border: solid #0b2845;
+  color: #0b2845;
+  font-size: 20px !important;
+  border-radius: 20rem;
+  background-color: rgba(255, 255, 255, 0.6705882353);
+}
+.MyLinksSection .profileButtons .button:hover, .MyLinksSection .profileButtons .button:focus {
+  background-color: white;
+  color: #02aa9d;
+}
+.MyLinksSection .profileButtons .button i {
+  border-right: solid 2px;
+  padding-right: 0.5rem;
+  margin-right: 0.5rem;
+}
+.MyLinksSection .LoneCoder {
+  color: white !important;
+  font-size: 12px;
+  text-align: center;
+}
+.MyLinksSection .LoneCoder a, .MyLinksSection .LoneCoder a:hover {
+  color: white !important;
+  font-weight: bold;
+  text-decoration: none !important;
+}
+
+.titulo {
+  font-size: 40px;
+}
+
+.contenido {
+  font-size: 25px;
+}
+
+@media (max-width: 767px) {
+  .titulo {
+    font-size: 32.5px;
+  }
+  .contenido {
+    font-size: 18px;
+  }
+}
+.AniosExperienciaSection {
+  text-align: center;
+  background-color: #02aa9d;
+  color: white;
+}
+
+.button-white, .button-white:hover, .button-skblue, .button-skblue:hover, .button-blue, .button-blue:hover {
+  font-weight: bold !important;
+  font-size: 20px !important;
+  border-radius: 0.625rem !important;
+  padding: 0.5rem 0.75rem !important;
+  border-style: solid !important;
+  text-decoration: unset !important;
+}
+
+.button-white, .button-white:hover {
+  color: #000 !important;
+  mix-blend-mode: screen !important;
+  background-color: white !important;
+  border-color: white !important;
+}
+
+.button-skblue, .button-skblue:hover {
+  background-color: #02aa9d !important;
+  border-color: #0c635c !important;
+}
+
+.button-blue, .button-blue:hover {
+  background-color: #0b2845 !important;
+  border-color: #0b2845 !important;
+}
+
+.blue-bg {
+  background-color: #0b2845;
+}
+
+.skblue-bg {
+  background-color: #02aa9d;
+}
+
+.teethBg {
+  width: 100%;
+}
+.teethBg.rotate {
+  rotate: 180deg;
+}
+
+.BrindandoSonrisasContainer {
+  background-color: #0b2845;
+  color: white;
+}
 
 .ScrollDownPlugin {
   position: relative;
@@ -429,7 +599,7 @@
 
 .ScrollDownPlugin div {
   position: absolute;
-  top: 47.5%;
+  top: 40%;
   width: 100%;
   text-align: center;
   z-index: 2;
@@ -437,8 +607,8 @@
   white-space: nowrap;
 }
 .ScrollDownPlugin div > img {
-  width: 50%;
-  background-color: rgba(255, 255, 255, 0.4196078431);
+  width: 250px;
+  background-color: white;
   padding: 0.75rem;
   border-radius: 0.625rem;
 }
@@ -460,12 +630,11 @@
   z-index: 2;
   display: inline-block;
   transform: translate(0, -50%);
-  color: #fff;
   letter-spacing: 0.1em;
   text-decoration: none;
   transition: opacity 0.3s;
   padding-top: 60px;
-  color: white;
+  color: white !important;
 }
 
 .ScrollDownPlugin a:hover {
@@ -514,6 +683,76 @@
     opacity: 0;
   }
 }
+.whatsapp-plugin:hover, .whatsapp-plugin:link,
+.whatsapp-plugin:visited, .whatsapp-plugin:focus,
+.whatsapp-plugin:before, .whatsapp-plugin:after,
+.whatsapp-plugin:checked, .whatsapp-plugin:active {
+  color: #FFF;
+  text-decoration: none;
+  font-weight: normal;
+  text-shadow: unset;
+}
+
+.whatsapp-plugin {
+  position: fixed;
+  width: 3.125rem;
+  height: 3.125rem;
+  bottom: 0.95rem;
+  right: 0.95rem;
+  background-color: #4AD504;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 30px;
+  z-index: 100;
+  color: #FFF;
+  text-decoration: none;
+  font-weight: normal;
+}
+
+.whatsapp-icon {
+  margin-top: 11px;
+}
+
+.font-weight-light {
+  font-weight: 300 !important;
+}
+
+.font-weight-lighter {
+  font-weight: lighter !important;
+}
+
+.font-weight-normal {
+  font-weight: 400 !important;
+}
+
+.font-weight-bold {
+  font-weight: 700 !important;
+}
+
+.font-weight-bolder {
+  font-weight: bolder !important;
+}
+
+.ReactSlide .slot {
+  padding: 10px;
+  cursor: pointer;
+}
+.ReactSlide .slot:focus, .ReactSlide .slot:active, .ReactSlide .slot:hover {
+  outline: none;
+}
+.ReactSlide .card {
+  border-radius: 0.8rem;
+  -moz-border-radius: 0.8rem;
+  -webkit-border-radius: 0.8rem;
+}
+.ReactSlide .imgCard {
+  height: 550px;
+  border: none;
+  border-radius: 0.8rem;
+  -moz-border-radius: 0.8rem;
+  -webkit-border-radius: 0.8rem;
+}
+
 /*!
  * Bootstrap  v5.3.3 (https://getbootstrap.com/)
  * Copyright 2011-2024 The Bootstrap Authors

@@ -1,0 +1,24 @@
+.ReactSlide{
+    .slot{
+        padding: 10px;
+        cursor: pointer;
+    }
+
+    .slot:focus, .slot:active , .slot:hover {
+        outline: none;
+    }
+
+    .card{
+        border-radius: 0.8rem;
+        -moz-border-radius: 0.8rem;
+        -webkit-border-radius: 0.8rem;
+    }
+
+    .imgCard{
+        height: 550px;
+        border: none;
+        border-radius: 0.8rem;
+        -moz-border-radius: 0.8rem;
+        -webkit-border-radius: 0.8rem;
+    }
+}

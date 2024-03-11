@@ -16,3 +16,4 @@ require('./components/Example');
 require('./happydentss/Layouts/Header');
 require('./happydentss/Layouts/Footer');
 require('./happydentss/Home/Home');
+require('./happydentss/MyLinks/MyLinks');

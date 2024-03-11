@@ -1,3 +1,9 @@
+body{
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
+}
+
 .HappyDentssNavbar{
     position: fixed !important;
     top: 0 !important;
@@ -16,7 +22,7 @@
 
 .HappyDentssNavbarLink, .HappyDentssNavbarDropdown>a{
     color: black !important;
-    font-size: 15px !important;
+    font-size: 17.5px !important;
     padding: 0.5rem 1rem !important;
     align-self: center;
 }
@@ -27,7 +33,7 @@
 }
 
 .logoImg{
-    width: 145px;
+    width: 100px;
     height: auto;
 }
 
@@ -37,12 +43,24 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+
+    .content{
+        font-size: 25px !important;
+        font-weight: bold;
+    }
+
+    @media (max-width: 767px){
+        .content{
+            font-size: 32.5px !important;
+        }
+    }
 }
 
 .HappyDentssFooter{
     box-shadow: 0 -0.25rem 20px 2px rgba(0, 0, 0, 0.2);
-    background-color: $happydentss_skblue;
+    background-color: $happydentss_dark_skblue;
     font-size: 15px !important;
+    color:white;
 
     .label{
         background-color: $happydentss_skblue;
@@ -100,4 +118,192 @@
         }
     }
 
+    .footer-list{
+        a{
+            color:white;
+            text-decoration: none;
+        }
+    }
+
+    .footer-title{
+        font-weight: bold;
+        font-size: 25px ;
+    }
+
+    .nav-link-footer{
+        font-size: 17.5px;
+    }
+
+    .footer-link-icon{
+        i{
+            color: white;
+            font-size: 50px
+        }
+    }
+}
+
+.MyLinksSection{
+    background: linear-gradient(0deg,#02aa9d,#3cfff0,#33ccff);
+    animation: gradient-animation 5s ease infinite;
+
+    @keyframes gradient-animation {
+        0% {
+            background-position: 0% 50%;
+        }
+        50% {
+            background-position: 100% 50%;
+        }
+        100% {
+            background-position: 0% 50%;
+        }
+    }
+
+    .panel{
+        //background-color: #ffffff6e;
+        border-radius: 0.625rem;
+    }
+
+    .profilePhoto{
+        text-align: center;
+
+        img{
+            transition: transform .7s ease-in-out;
+            width: 100px;
+            border-radius: 50%;
+            border: solid $happydentss_blue;
+        }
+
+        img:hover{
+            transform: rotate(360deg) scale(1.125);
+            cursor: pointer;
+        }
+    }
+
+    .profileName{
+        color: $happydentss_blue;
+        text-align: center;
+        font-weight: bold;
+        padding-top: 1rem;
+        font-size: 20px !important;
+    }
+
+    .profileButtons{
+        padding-top: 0.5rem;
+
+        .button{
+            width: 100%;
+            text-align: center;
+            font-weight: bold;
+            border: solid $happydentss_blue;
+            color: $happydentss_blue;
+            font-size: 20px !important;
+            border-radius: 20rem;
+            background-color: #ffffffab;
+
+            &:hover, &:focus{
+                background-color: white;
+                color: $happydentss_skblue;
+            }
+
+            i{
+                border-right: solid 2px;
+                padding-right: 0.5rem;
+                margin-right: 0.5rem;
+            }
+        }
+    }
+
+    .LoneCoder{
+        color: white !important;
+        font-size: 12px;
+        text-align: center;
+
+        a, a:hover{
+            color: white !important;
+            font-weight: bold;
+            text-decoration: none !important;
+        }
+    }
+}
+
+.titulo{
+    font-size: 40px;
+}
+
+.contenido{
+    font-size: 25px;
+}
+
+@media (max-width: 767px){
+    .titulo{
+        font-size: 32.5px;
+    }
+
+    .contenido{
+        font-size: 18px;
+    }
+}
+
+.AniosExperienciaSection{
+    text-align: center;
+    background-color: $happydentss_skblue;
+    color: white;
+}
+
+.button-white, .button-skblue, .button-blue{
+    &, &:hover{
+        font-weight: bold !important;
+        font-size: 20px !important;
+        border-radius: 0.625rem !important;
+        padding: 0.5rem 0.75rem !important;
+        border-style: solid !important;
+        text-decoration: unset !important;
+    }
+}
+
+.button-white{
+    &, &:hover{
+        color: #000 !important;
+        mix-blend-mode: screen !important;
+        background-color: white !important;
+        border-color: white !important;
+    }
+}
+
+.button-skblue{
+    &, &:hover{
+        background-color: $happydentss_skblue !important;
+        border-color: $happydentss_dark_skblue !important;
+    }
+}
+
+.button-blue{
+    &, &:hover{
+        background-color: $happydentss_blue !important;
+        border-color: $happydentss_blue !important;
+    }
+}
+
+.blue-bg{
+    background-color: $happydentss_blue;
+}
+
+.skblue-bg{
+    background-color: $happydentss_skblue
+}
+
+.teethBg{
+    width: 100%;
+    &.rotate{
+        rotate: 180deg;
+    }
+}
+
+.EspecialidadesSection{
+
+}
+
+.BrindandoSonrisasContainer{
+    background-color: $happydentss_blue;
+    color: white;
 }
